@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <h2 class="panel-heading panel-title">GitHub Projects</h2>
+            <div class="panel-body">
+                <div class="repo" data-ng-repeat="repo in repos">
+                    <p><a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                        {{ repo.description }}</p>
+                    <p class="small">
+                        <span class="detail">Open Issues: {{ repo.open_issues_count }}</span>
+                        <span class="detail">Watchers: {{ repo.watchers_count }}</span>
+                        <span class="detail">Forks: {{ repo.forks_count }}</span>
+                        <span class="detail" data-ng-if="repo.fork">Forked Repo</span>
+                        <span class="detail" data-ng-if="!repo.fork">Original Repo</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
