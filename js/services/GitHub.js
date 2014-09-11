@@ -6,6 +6,13 @@ myApp.factory('GitHubService', [
         return {
             getRepos: function() {
                 return $http.get(url + 'users/kiswa/repos');
+            },
+
+            getReadMe: function(name) {
+                return $http.get(url + 'repos/kiswa/' + name + '/readme',
+                                 { headers: {
+                                     Accept: 'application/vnd.github.V3.raw' }
+                                 });
             }
         };
     }

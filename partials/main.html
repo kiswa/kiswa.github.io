@@ -5,6 +5,7 @@
             <div class="panel-body">
                 <div class="repo" data-ng-repeat="repo in repos">
                     <p><a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                        <span class="fa fa-search-plus pull-right" data-ng-click="getReadMe(repo)"></span>
                         {{ repo.description }}</p>
                     <p class="small">
                         <span class="detail">Open Issues: {{ repo.open_issues_count }}</span>
@@ -14,6 +15,14 @@
                         <span class="detail" data-ng-if="!repo.fork">Original Repo</span>
                     </p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <h2 class="panel-heading panel-title">README</h2>
+            <div class="panel-body">
+                <p data-ng-bind-html="readme.text"></p>
             </div>
         </div>
     </div>

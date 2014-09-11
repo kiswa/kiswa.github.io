@@ -1,4 +1,4 @@
-var myApp = angular.module('GitHubPages', ['ngRoute']);
+var myApp = angular.module('GitHubPages', ['ngRoute', 'ngSanitize']);
 
 myApp.config([
     '$routeProvider',
