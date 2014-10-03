@@ -4,9 +4,11 @@
             <h2 class="panel-heading panel-title">GitHub Projects</h2>
             <div class="panel-body">
                 <div class="repo" data-ng-repeat="repo in repos">
-                    <p><a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                    <p>
+                        <a href="{{ repo.html_url }}">{{ repo.name }}</a>
                         <span class="fa fa-search-plus pull-right" data-ng-click="getReadMe(repo)"></span>
-                        {{ repo.description }}</p>
+                        {{ repo.description }}
+                    </p>
                     <p class="small">
                         <span class="detail">Open Issues: {{ repo.open_issues_count }}</span>
                         <span class="detail">Watchers: {{ repo.watchers_count }}</span>
@@ -23,6 +25,19 @@
             <h2 class="panel-heading panel-title">README</h2>
             <div class="panel-body">
                 <p data-ng-bind-html="readme.text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <h2 class="panel-heading panel-title">Bitbucket Projects</h2>
+            <div class="repo" data-ng-repeat="bb in bbRepos">
+                <p>
+                    <a href="{{ bb.links.html.href }}" target="bitbucket">{{ bb.name }}
+                        <span class="fa fa-external-link pull-right"></span>
+                    </a>
+                    {{ bb.description }}
+                </p>
             </div>
         </div>
     </div>

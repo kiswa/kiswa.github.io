@@ -1,6 +1,7 @@
 myApp.controller('MainCtrl', [
-    '$scope', 'GitHubService',
-    function($scope, GitHubService) {
+    '$scope', 'GitHubService', 'BitbucketService',
+    function($scope, GitHubService, BitbucketService) {
+        $scope.bbRepos = [];
         $scope.repos = [];
         $scope.readme = {
             text: 'Click the magnifying glass on a project and the README will be displayed here.'
@@ -17,5 +18,10 @@ myApp.controller('MainCtrl', [
         .success(function(data) {
             $scope.repos = data;
         });
+
+        BitbucketService.getRepos()
+        .success(function(data) {
+            $scope.bbRepos = data.values;
+        })
     }
 ]);
