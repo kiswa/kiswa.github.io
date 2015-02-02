@@ -28,18 +28,26 @@
             </div>
         </div>
     </div>
-    <!-- One day
+</div>
+<div class="row">
     <div class="col-md-6">
         <div class="panel panel-default">
             <h2 class="panel-heading panel-title">Bitbucket Projects</h2>
-            <div class="repo" data-ng-repeat="bb in bbRepos">
-                <p>
-                    <a href="{{ bb.links.html.href }}" target="bitbucket">{{ bb.name }}
-                        <span class="fa fa-external-link pull-right"></span>
-                    </a>
-                    {{ bb.description }}
-                </p>
+            <div class="panel-body">
+                <div class="repo" data-ng-repeat="bb in bbRepos">
+                    <p>
+                        <a href="{{ bb.links.html.href }}" target="bitbucket">{{ bb.name }}
+                            <span class="fa fa-external-link pull-right"></span>
+                        </a>
+                        {{ bb.description }}
+                    </p>
+                    <p class="small">
+                        <span class="detail">Open Issues: {{ bb.open_issues_count }}</span>
+                        <span class="detail">Watchers: {{ bb.watchers_count }}</span>
+                        <span class="detail">Original Repo</span>
+                    </p>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
