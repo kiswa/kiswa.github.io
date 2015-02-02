@@ -41,7 +41,6 @@ myApp.controller('MainCtrl', [
                 if ($scope.bbRepos[i].has_issues) {
                     BitbucketService.getWatchers(repoName)
                     .success(function(data, status, headers, config) {
-                        console.log(data);
                         var name = config.url.split('/')[6];
                         for (var i = 0; i < $scope.bbRepos.length; ++i) {
                             if ($scope.bbRepos[i].full_name.split('/')[1] == name) {
