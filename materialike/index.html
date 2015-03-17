@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SCSS Settings Tests</title>
+
+        <link rel="stylesheet" href="lib/vendor.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="wrapper" style="max-width:960px;margin:0 auto;">
+            <div class="primary-background shadow-high">
+                <h1 class="accent-foreground">CSS Basic Elements</h1>
+                <p class="text-inverse">The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+            </div>
+
+            <div class="shadow-high">
+                <p>shadow-high</p>
+            </div>
+            <div class="shadow-middle">
+                <p>shadow-middle</p>
+            </div>
+            <div class="shadow-low">
+                <p>shadow-low</p>
+            </div>
+            <div class="shadow-float accent-background" style="width: 40px;height:40px;border-radius:100%;">
+                <p style="font-size:1.8em;margin-left:.43em;padding-top:.1em;color: #666;">+</p>
+            </div>
+            <p>shadow-float (and accent-background)</p>
+
+            <p class="accent-background primary-foreground">accent-background and primary-foreground</p>
+            <p class="accent-foreground primary-background">accent-foreground and primary-background</p>
+            <p>Normal text with <span class="text-secondary">text-secondary text here</span></p>
+
+            <h1 id="headings">Headings</h1>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <small><a href="#wrapper">[top]</a></small>
+            <hr />
+
+            <h1 id="paragraph">Paragraph</h1>
+            <img style="width:250px;height:125px;float:right" src="http://placehold.it/250x125" alt="Test image, please ignore.">
+            <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing <a href="#wrapper">test visited link</a> elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, <strong>strong</strong> tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+            <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+            <small><a href="#wrapper">[top]</a></small>
+            <hr />
+
+            <h1 id="list_types">List Types</h1>
+            <h3>Definition List</h3>
+            <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+            </dl>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+            <small><a href="#wrapper">[top]</a></small>
+            <hr />
+
+            <h1 id="form_elements">Fieldsets, Legends, and Form Elements</h1>
+            <form>
+                <h2>Form Element</h2>
+                <fieldset>
+                    <legend>Legend</legend>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+                    <p><label for="text_field">Text Field:</label><br />
+                    <input type="text" id="text_field" /></p>
+                    <input type="text" id="text_field" disabled /></p>
+                    <input type="text" id="text_field" readonly /></p>
+                    <p><label for="text_area">Text Area:</label><br />
+                    <textarea id="text_area"></textarea></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Legen</legend>
+                    <p><label for="select_element">Select Element:</label><br />
+                    <select name="select_element">
+                        <optgroup label="Option Group 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                        <optgroup label="Option Group 2">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </optgroup>
+                    </select></p>
+                    <p><label for="radio_buttons">Radio Buttons:</label><br />
+                    <input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1<br/>
+                    <input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2<br/>
+                    <input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3<br/>
+                    </p>
+                    <p><label for="checkboxes">Checkboxes:</label><br />
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Radio 1<br/>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Radio 2<br/>
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Radio 3<br/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>dary</legend>
+                    <p><label for="password">Password:</label><br />
+                    <input type="password" class="password" name="password" />
+                    </p>
+                    <p><label for="file">File Input:</label><br />
+                    <input type="file" class="file" name="file" />
+                    </p>
+                    </p>
+                </fieldset>
+                <p><input class="button" type="reset" value="Clear" /> <input class="button primary-background" type="submit" value="Submit" /><button>Button</button>
+            </form>
+            <small><a href="#wrapper">[top]</a></small>
+            <hr />
+
+            <h1 id="tables">Tables</h1>
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    </tr>
+                    <tr>
+                        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <small><a href="#wrapper">[top]</a></small>
+            <hr />
+
+            <h1 id="misc">Misc Stuff - abbr, acronym, kbd, pre, code, sub, sup, etc.</h1>
+            <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet <kbd>K</kbd>, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
+            <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p></pre>
+            <p><code>Elit dicta dolorem quaerat dolores eaque quibusdam fuga atque pariatur aliquam hic! Necessitatibus voluptatum error numquam praesentium ea. Non autem ratione earum voluptatibus quas magni ducimus quas. Sit quis harum architecto laudantium illum. Dolore id <kbd>K</kbd> veritatis neque ipsam aliquid iusto quae neque accusamus ullam expedita quisquam maiores itaque! Similique.</code></p>
+            <blockquote>
+                "This stylesheet is going to help so freaking much." <br />-Blockquote
+            </blockquote>
+            <small><a href="#wrapper">[top]</a></small>
+        </div>
+    </body>
+</html>
