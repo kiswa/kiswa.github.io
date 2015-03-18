@@ -39,7 +39,7 @@ a {
   a:visited {
     color: #00a1b5; }
 
-.primary-background {
+.primary-background, .header {
   background-color: #00bcd4; }
 
 .primary-foreground {
@@ -175,3 +175,44 @@ table {
 
 .shadow-low {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26); }
+
+body {
+  margin-top: 130px; }
+
+.header {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  left: 0;
+  overflow: hidden;
+  padding-left: 10%;
+  position: fixed;
+  right: 0;
+  top: 0; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px; }
+  .wrapper:after, .wrapper:before {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0; }
+
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
+  float: left;
+  margin-right: 1em;
+  max-width: 28%;
+  padding: .8em; }
+
+.left {
+  float: left; }
+
+.login {
+  margin: 0 auto;
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center; }
+  .login button {
+    display: block;
+    margin-left: 60%;
+    margin-bottom: 1em; }
