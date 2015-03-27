@@ -1,10 +1,10 @@
 RewriteEngine On
 Options FollowSymLinks
 
-RewriteBase /365Photos/
+RewriteBase /
 
-RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
-RewriteRule ^(.*)$ - [E=BASE:%1]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ %{ENV:BASE}index.html [QSA,L]
+RewriteRule ^ index.html [L]
