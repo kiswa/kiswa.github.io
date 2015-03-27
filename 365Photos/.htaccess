@@ -1,7 +1,7 @@
 RewriteEngine On
 Options FollowSymLinks
 
-RewriteBase /
+RewriteBase /365Photos/
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
