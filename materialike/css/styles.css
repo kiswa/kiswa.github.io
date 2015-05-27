@@ -65,7 +65,9 @@ a {
 .button {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
   border: 0;
-  padding: 0.3em 0.6em; }
+  padding: 0.3em 0.6em;
+  -webkit-transition: box-shadow .25s;
+          transition: box-shadow .25s; }
   .button:focus, .button:active {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26); }
 
@@ -120,7 +122,9 @@ select {
   background-color: #fff;
   border: 0;
   border-bottom: 1px solid #00bcd4;
-  margin: .4em; }
+  margin: .4em;
+  -webkit-transition: border-color .25s;
+          transition: border-color .25s; }
   input:disabled,
   button:disabled,
   textarea:disabled,
@@ -138,7 +142,9 @@ select {
 button {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
   border: 0;
-  padding: 0.3em 0.6em; }
+  padding: 0.3em 0.6em;
+  -webkit-transition: box-shadow .25s;
+          transition: box-shadow .25s; }
   button:focus, button:active {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
     border: 0; }
@@ -191,7 +197,8 @@ body {
   padding-left: 10%;
   position: fixed;
   right: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .wrapper {
   margin: 0 auto;
@@ -206,8 +213,8 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
   float: left;
   margin-right: 1.1%;
-  width: 32.5%;
-  padding: .8em; }
+  padding: .8em;
+  width: 32.5%; }
 
 .last {
   margin-right: 0; }
@@ -222,5 +229,5 @@ body {
   text-align: center; }
   .login button {
     display: block;
-    margin-left: 60%;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    margin-left: 60%; }
