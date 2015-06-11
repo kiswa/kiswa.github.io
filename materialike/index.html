@@ -83,11 +83,12 @@
                     <legend>Legend</legend>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
                     <p><label for="text_field">Text Field:</label><br />
-                    <input type="text" id="text_field" /></p>
-                    <input type="text" id="text_field" disabled /></p>
-                    <input type="text" id="text_field" readonly /></p>
+                    <input type="text" id="text_field" placeholder="Standard Input" /></p>
+                    <input type="text" id="text_field" disabled value="Disabled input."/></p>
+                    <input type="text" id="text_field" readonly value="Read only input."/></p>
                     <p><label for="text_area">Text Area:</label><br />
                     <textarea id="text_area"></textarea></p>
+                    <textarea id="text_area_read_only" readonly>Read only text area.</textarea></p>
                 </fieldset>
                 <fieldset>
                     <legend>Legen</legend>
@@ -105,15 +106,16 @@
                         </optgroup>
                     </select></p>
                     <p>Radio Buttons:<br />
-                    <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+                    <label><input type="radio" class="radio" name="radio_button" value="radio_1" checked /> Radio 1</label><br/>
                     <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
                     <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
                     </p>
                     <p>Checkboxes:<br />
-                    <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+                    <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" checked /> Checkbox 1</label><br/>
                     <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
                     <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
                     </p>
+                    <p><b>Note:</b> The checkbox and radio button controls must be wrapped in a label for these styles to work.</p>
                 </fieldset>
                 <fieldset>
                     <legend>dary</legend>
@@ -125,7 +127,12 @@
                     </p>
                     </p>
                 </fieldset>
-                <p><input class="button" type="reset" value="Clear" /> <input class="button primary-background" type="submit" value="Submit" /><button>Button</button>
+                <p>
+                <input class="button" type="reset" value="Clear" />
+                <input class="button primary-background" type="submit" value="Submit" />
+                <button>Button</button>
+                <button class="flat">Flat Button</button>
+                </p>
             </form>
                 <h2>Example Login Form</h2>
             <form class="login">
