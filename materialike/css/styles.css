@@ -76,7 +76,7 @@ a {
   padding: 0.3em 0.6em;
   -webkit-transition: box-shadow .25s;
           transition: box-shadow .25s; }
-  .button:focus, .button:active {
+  .button:focus, .button:active, .button:hover {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26); }
 
 .flat {
@@ -156,8 +156,7 @@ input {
   input:read-only {
     background-color: rgba(179, 179, 179, 0.12); }
   input:focus {
-    background-position: 0 0, 0 0;
-    border-color: transparent; }
+    background-position: 0 0, 0 0; }
 
 button {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
@@ -165,12 +164,14 @@ button {
   padding: 0.3em 0.6em;
   -webkit-transition: box-shadow .25s;
           transition: box-shadow .25s; }
-  button:focus, button:active {
+  button:focus, button:active, button:hover {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
     border: 0; }
 
 textarea {
   border: 1px solid #00bcd4; }
+  textarea:read-only {
+    background-color: rgba(179, 179, 179, 0.12); }
   textarea:focus {
     border-color: #c6ff00; }
 
@@ -204,9 +205,9 @@ input[type=checkbox]:before {
 
 input[type=checkbox]:checked:before {
   color: #c6ff00;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.87);
   content: '✔';
-  line-height: 1em; }
+  line-height: 1em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.87); }
 
 table {
   width: 100%; }
