@@ -7,10 +7,18 @@
 
         <link rel="stylesheet" href="css/scss-base.css">
         <style>
+            body {
+                background-color: #fefefe;
+            }
             .wrapper {
+                background-color: #fff;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+                            0 1px 5px 0 rgba(0, 0, 0, .12),
+                            0 3px 1px -2px rgba(0, 0, 0, .2);
                 margin: 1em auto;
                 margin-top: 60px;
                 max-width: 800px;
+                padding: 1em;
             }
             .half {
                 float: left;
@@ -486,7 +494,7 @@ q w e r t y u i o p [ ] \</pre>
                         <p>Only the <code>&lt;color&gt;</code> and <code>&lt;range&gt;</code> elements have been given any unique styles.</p>
 
                         <label for="color">Color</label>
-                        <input id="color" type="color" value="#000000">
+                        <input id="color" type="color" value="#000">
 
                         <label for="range">Range</label>
                         <input id="range" type="range" value="20">
@@ -506,7 +514,7 @@ q w e r t y u i o p [ ] \</pre>
                         <label for="datetime">Datetime</label>
                         <input id="datetime" type="datetime" value="1970-01-01T00:00:00Z">
 
-                        <label for="datetime-local">Datetime Local</label>
+                        <label for="datetime-local">Datetime</label>
                         <input id="datetime-local" type="datetime-local" value="1970-01-01T00:00:00">
                     </fieldset>
                 </form>
