@@ -517,6 +517,7 @@ select {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 3px;
+  height: 2.2em;
   outline: 0;
   padding: 5px;
   width: 100%; }
@@ -534,12 +535,8 @@ select {
 textarea {
   resize: vertical; }
 
-[type="search"] {
-  width: 98.8%; }
-
 [type="color"] {
-  background-color: #fff;
-  padding: 0; }
+  padding: 2px; }
 
 [type="range"] {
   -webkit-appearance: none; }
@@ -596,6 +593,7 @@ textarea {
 [type="button"],
 [type="submit"],
 button {
+  height: auto;
   width: auto; }
 
 figure {
@@ -623,6 +621,7 @@ button,
   background-color: #7fd4ff;
   border: 1px solid #33baff;
   color: #333;
+  cursor: pointer;
   display: inline-block;
   line-height: 1em;
   padding: 10px; }
@@ -646,7 +645,8 @@ button,
   button:disabled,
   .btn:disabled {
     background-color: #b2e5ff;
-    color: #4d4d4d; }
+    color: #4d4d4d;
+    cursor: default; }
   [type="reset"]:focus,
   [type="button"]:focus,
   [type="submit"]:focus,
