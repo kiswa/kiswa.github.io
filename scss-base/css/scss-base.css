@@ -533,6 +533,7 @@ select {
     border: 1px solid #6a6a6a; }
 
 textarea {
+  height: auto;
   resize: vertical; }
 
 [type="color"] {
