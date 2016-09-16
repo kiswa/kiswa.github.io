@@ -1,16 +1,19 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono");
 html {
   font-family: sans-serif;
   /* 1 */
-  -ms-text-size-adjust: 100%;
+  line-height: 1.15;
   /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 3 */ }
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -217,6 +220,7 @@ hr {
  */
 button,
 input,
+optgroup,
 select,
 textarea {
   font: inherit;
@@ -365,19 +369,14 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-html {
-  box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
 ::-moz-selection {
   background: #7fd4ff; }
 
 ::selection {
   background: #7fd4ff; }
+
+.hidden {
+  display: none; }
 
 html {
   background-color: #fefefe;
@@ -594,8 +593,49 @@ textarea {
 [type="button"],
 [type="submit"],
 button {
+  cursor: pointer;
   height: auto;
   width: auto; }
+
+label {
+  cursor: pointer; }
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  vertical-align: text-top; }
+  .toggle::before {
+    background-color: #da6869;
+    border-radius: 3px;
+    content: ' ';
+    display: inline-block;
+    height: 8px;
+    padding: 5px 7px;
+    -webkit-transition: background 300ms;
+    transition: background 300ms;
+    width: 23px; }
+  .toggle::after {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    content: ' ';
+    display: inline-block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -5px;
+    -webkit-transition: -webkit-transform 150ms;
+    transition: -webkit-transform 150ms;
+    transition: transform 150ms;
+    transition: transform 150ms, -webkit-transform 150ms;
+    width: 15px; }
+
+.hidden:checked + .toggle::before {
+  background-color: #86deb7; }
+
+.hidden:checked + .toggle::after {
+  -webkit-transform: translate(23px);
+          transform: translate(23px); }
 
 figure {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
