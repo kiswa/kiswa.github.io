@@ -369,6 +369,14 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 ::-moz-selection {
   background: #7fd4ff; }
 
@@ -609,11 +617,10 @@ label {
     border-radius: 3px;
     content: ' ';
     display: inline-block;
-    height: 8px;
-    padding: 5px 7px;
+    height: 16px;
     -webkit-transition: background 300ms;
     transition: background 300ms;
-    width: 23px; }
+    width: 32px; }
   .toggle::after {
     background-color: #fff;
     border: 1px solid #aaa;
@@ -623,19 +630,19 @@ label {
     height: 20px;
     left: 0;
     position: absolute;
-    top: -5px;
+    top: -3px;
     -webkit-transition: -webkit-transform 150ms;
     transition: -webkit-transform 150ms;
     transition: transform 150ms;
     transition: transform 150ms, -webkit-transform 150ms;
-    width: 15px; }
+    width: 16px; }
 
 .hidden:checked + .toggle::before {
   background-color: #86deb7; }
 
 .hidden:checked + .toggle::after {
-  -webkit-transform: translate(23px);
-          transform: translate(23px); }
+  -webkit-transform: translate(16px);
+          transform: translate(16px); }
 
 figure {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
